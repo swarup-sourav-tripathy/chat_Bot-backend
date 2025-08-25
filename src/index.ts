@@ -7,7 +7,7 @@ import { apiKey, serverClient } from "./serverClient";
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: "*" }));
+app.use(cors({ origin: "https://chat-bot-frontend-dcre.onrender.com/" }));
 
 // Map to store the AI Agent instances
 // [user_id string]: AI Agent

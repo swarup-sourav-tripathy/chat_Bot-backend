@@ -39,7 +39,7 @@ app.get("/", (req, res) => {
 /**
  * Handle the request to start the AI Agent
  */
-app.post("/start-ai-agent", async (req, res) => {
+app.post("/start-ai-agent", async (req, res) => { 
   const { channel_id, channel_type = "messaging" } = req.body;
   console.log(`[API] /start-ai-agent called for channel: ${channel_id}`);
 

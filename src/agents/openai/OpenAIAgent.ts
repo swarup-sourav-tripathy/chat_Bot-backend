@@ -28,7 +28,7 @@ export class OpenAIAgent implements AIAgent {
     const apiKey = process.env.GEMINI_API_KEY as string | undefined;
     if (!apiKey) {
       throw new Error("Gemini API key is required");
-    }
+    } 
 
     this.openai = new OpenAI({ 
       apiKey, 
